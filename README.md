@@ -4,7 +4,6 @@ Welcome to **C Bass**, a fish-themed programming language designed to help child
 
 ## Features
 
-- **Fish-Themed Syntax**: Enjoy fish-related keywords such as `fish`, `floatfish`, `algae`, `splash`, and `swim`!
 - **User-Friendly Constructs**: Includes basic programming structures like variable declaration, loops, conditionals, and output.
 - **Simple Printing**: Use `splash()` to print text or variables to the console.
 - **Conditional Logic**: Make decisions using `if` and `else`.
@@ -24,7 +23,7 @@ floatfish fish_weight = 4.5;
 algae fish_name = "Goldfish";
 ```
 
-Output (Splash)
+### Output (Splash)
 Use splash() to print strings or variables to the console.
 
 Example:
@@ -34,7 +33,7 @@ splash("The fish name is:");
 splash(fish_name);
 ```
 
-Conditionals (If-Else)
+### Conditionals (If-Else)
 Make decisions with if and else.
 
 Example:
@@ -45,7 +44,7 @@ else
     splash("Just a small group of fish here.");
 ```
 
-Loops (Swim)
+### Loops (Swim)
 Use the swim loop to iterate through a range of numbers.
 
 Example:
@@ -53,27 +52,36 @@ Example:
 swim (fish i = 0; i < num_fish; i = i + 1)
     splash(i);
 ```
-File Descriptions
-cbass.py: Main entry point to compile and run C Bass programs.
-CBassTokenizer.py: Tokenizes C Bass source code into tokens for parsing.
-CBassParser.py: Parses tokens into an abstract syntax tree (AST) for further processing.
-CBassCodeGenerator.py: Converts the AST into a set of instructions.
-CBassAssembler.py: Assembles instructions into bytecode for execution.
-CBassVirtualMachine.py: Executes the bytecode and simulates the C Bass virtual machine.
-fishEstimate.cbass: A sample C Bass program demonstrating variables, conditionals, and loops.
-How to Use C Bass
+## File Descriptions
+
+- **cbass.py**: Main entry point to compile and run C Bass programs.
+
+- **CBassTokenizer.py**: Tokenizes C Bass source code into tokens for parsing.
+
+- **CBassParser.py**: Parses tokens into an abstract syntax tree (AST) for further processing.
+
+- **CBassCodeGenerator.py**: Converts the AST into a set of instructions.
+
+- **CBassAssembler.py**: Assembles instructions into bytecode for execution.
+
+- **CBassVirtualMachine.py**: Executes the bytecode and simulates the C Bass virtual machine.
+
+- **fishEstimate.cbass**: A sample C Bass program demonstrating variables, conditionals, and loops.
+
+## How to Use C Bass
+
 1. Clone the repository:
-bash
-Copy code
+```
 git clone https://github.com/your-username/cbass-language.git
 cd cbass-language
+```
 2. Run the C Bass program:
-bash
-Copy code
+```
 python3 cbass.py fishEstimate.cbass
 This will compile and execute the fishEstimate.cbass program.
+```
+### Example Code
 
-Example Code
 The fishEstimate.cbass program:
 
 ```
@@ -96,7 +104,8 @@ swim (fish i = 0; i < num_fish; i = i + 1)
     splash(i);
 ```
 
-Example Output
+### Example Output
+
 For the sample program fishEstimate.cbass, the output will be:
 ```
 Welcome to the ocean!
@@ -108,32 +117,39 @@ We have a big school of fish!
 2
 ```
 
-Project Structure
+## Project Structure
 The project is composed of several key components:
 
-Tokenizer: Splits the source code into meaningful tokens.
-Parser: Converts the tokens into an AST (Abstract Syntax Tree).
-Code Generator: Generates intermediate instructions based on the AST.
-Assembler: Converts instructions into bytecode.
-Virtual Machine: Executes the bytecode and simulates the program behavior.
-How It Works
-Tokenization: The C Bass code is first split into tokens by CBassTokenizer.py.
-Parsing: The tokens are parsed into an Abstract Syntax Tree (AST) by CBassParser.py.
-Code Generation: The AST is converted into a set of intermediate instructions by CBassCodeGenerator.py.
-Assembly: These instructions are assembled into bytecode by CBassAssembler.py.
-Execution: The bytecode is executed by the virtual machine (CBassVirtualMachine.py), which simulates the behavior of the program.
-Contributing
+- **Tokenizer**: Splits the source code into meaningful tokens.
+- **Parser**: Converts the tokens into an AST (Abstract Syntax Tree).
+- **Code Generator**: Generates intermediate instructions based on the AST.
+- **Assembler**: Converts instructions into bytecode.
+- **Virtual Machine**: Executes the bytecode and simulates the program behavior.
+
+
+## How It Works
+
+- **Tokenization**: The C Bass code is first split into tokens by CBassTokenizer.py.
+- **Parsing**: The tokens are parsed into an Abstract Syntax Tree (AST) by CBassParser.py.
+- **Code Generation**: The AST is converted into a set of intermediate instructions by CBassCodeGenerator.py.
+- **Assembly**: These instructions are assembled into bytecode by CBassAssembler.py.
+- **Execution**: The bytecode is executed by the virtual machine (CBassVirtualMachine.py), which simulates the behavior of the program.
+
+## Contributing
 
 We welcome contributions! Whether it's reporting bugs, suggesting features, or submitting pull requests, we appreciate your help in improving C Bass.
 
-Steps to Contribute:
-Fork the repository.
-Create a new branch for your feature or bugfix.
-Commit your changes and create a pull request.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
-Contact
+Steps to Contribute:
+
+1. Fork the repository.
+
+2. Create a new branch for your feature or bugfix.
+
+3. Commit your changes and create a pull request.
+
+## Contact
+
 For any questions, feel free to reach out via GitHub Issues or submit a pull request!
 
 Happy coding with C Bass! 🐠
