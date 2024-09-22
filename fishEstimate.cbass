@@ -1,0 +1,17 @@
+fish num_fish = 3;
+floatfish fish_weight = 4.5;
+algae fish_name = "Goldfish";
+
+splash("Welcome to the ocean!");
+splash("The fish name is:");
+splash(fish_name);
+
+splash(num_fish);
+
+if (num_fish > 2)
+    splash("We have a big school of fish!");
+else
+    splash("Just a small group of fish here.");
+
+swim (fish i = 0; i < num_fish; i = i + 1)
+    splash(i);
