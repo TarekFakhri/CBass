@@ -85,8 +85,6 @@ This will compile and execute the fishEstimate.cbass program.
 The fishEstimate.cbass program:
 
 ```
-cbass
-Copy code
 fish num_fish = 3;
 floatfish fish_weight = 4.5;
 algae fish_name = "Goldfish";
